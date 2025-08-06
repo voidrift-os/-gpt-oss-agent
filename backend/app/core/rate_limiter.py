@@ -6,18 +6,32 @@ from app.core.redis import redis_manager
 
 class RateLimiter:
     """Token bucket rate limiter using Redis"""
-    
+
     def __init__(self, key_prefix: str, rate: int, per_seconds: int):
         self.key_prefix = key_prefix
         self.rate = rate
         self.per_seconds = per_seconds
+        self._memory_store: dict[str, list[float]] = {}
     
     async def allow_request(self, identifier: str) -> bool:
+        """Check if request is allowed for given identifier.
+
+        If Redis is not connected, rate limiting is bypassed to keep the
+        application functional during tests or development environments.
         """
-        Check if request is allowed for given identifier (user_id, IP, etc.)
-        Returns True if allowed, False if rate limited
-        """
-        redis = redis_manager.get_redis()
+        try:
+            redis = redis_manager.get_redis()
+        except RuntimeError:
+            # Fallback to in-memory tracking when Redis is unavailable
+            now = time.time()
+            timestamps = self._memory_store.setdefault(identifier, [])
+            # Remove expired timestamps
+            while timestamps and timestamps[0] <= now - self.per_seconds:
+                timestamps.pop(0)
+            if len(timestamps) >= self.rate:
+                return False
+            timestamps.append(now)
+            return True
         key = f"{self.key_prefix}:{identifier}"
         now = time.time()
         
