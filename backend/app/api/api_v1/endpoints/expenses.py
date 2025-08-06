@@ -29,7 +29,7 @@ async def read_expenses(
         .order_by(Expense.date.desc())
     )
     expenses = result.scalars().all()
-    return [ExpenseSchema.from_orm(e) for e in expenses]
+    return [ExpenseSchema.model_validate(e) for e in expenses]
 
 
 
@@ -42,11 +42,11 @@ async def create_expense(
     _: Any = Depends(rate_limit_general)
 ) -> Any:
     """Create new expense"""
-    expense = Expense(**expense_in.dict(), owner_id=current_user.id)
+    expense = Expense(**expense_in.model_dump(), owner_id=current_user.id)
     db.add(expense)
     await db.commit()
     await db.refresh(expense)
-    return ExpenseSchema.from_orm(expense)
+    return ExpenseSchema.model_validate(expense)
 
 
 @router.put("/{expense_id}", response_model=ExpenseSchema)
@@ -70,13 +70,13 @@ async def update_expense(
     if not expense:
         raise HTTPException(status_code=404, detail="Expense not found")
     
-    update_data = expense_in.dict(exclude_unset=True)
+    update_data = expense_in.model_dump(exclude_unset=True)
     for field, value in update_data.items():
         setattr(expense, field, value)
     
     await db.commit()
     await db.refresh(expense)
-    return expense
+    return ExpenseSchema.model_validate(expense)
 
 
 @router.delete("/{expense_id}")

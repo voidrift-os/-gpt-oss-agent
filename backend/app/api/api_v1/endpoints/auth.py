@@ -42,8 +42,8 @@ async def create_user(
     db.add(user)
     await db.commit()
     await db.refresh(user)
-    
-    return User.from_orm(user)
+
+    return User.model_validate(user)
 
 
 @router.post("/login", response_model=Token)

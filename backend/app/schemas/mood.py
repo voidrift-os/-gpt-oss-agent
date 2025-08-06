@@ -1,4 +1,4 @@
-from pydantic import BaseModel, validator
+from pydantic import BaseModel, ConfigDict, field_validator
 from typing import Optional
 from datetime import datetime
 
@@ -9,7 +9,7 @@ class MoodBase(BaseModel):
     notes: Optional[str] = None
     date: datetime
 
-    @validator("mood_level")
+    @field_validator("mood_level")
     def validate_mood_level(cls, value):
         if not 1 <= value <= 10:
             raise ValueError("Mood level must be between 1 and 10")
@@ -33,8 +33,7 @@ class MoodInDBBase(MoodBase):
     created_at: datetime
     updated_at: Optional[datetime] = None
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class Mood(MoodInDBBase):
