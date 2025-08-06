@@ -1,5 +1,7 @@
 import logging
 import sys
+import logging
+import sys
 import structlog
 
 from fastapi import FastAPI
@@ -10,6 +12,7 @@ from app.api.api_v1 import api
 from app.api.api_v1.api import api_router
 from app.core.config import settings
 from app.core.redis import redis_manager
+from app.containers import container
 from prometheus_fastapi_instrumentator import Instrumentator
 
 
@@ -41,6 +44,8 @@ app = FastAPI(
     openapi_url=f"{settings.api_v1_str}/openapi.json",
     lifespan=lifespan
 )
+# Attach the container for tests to override dependencies
+app.container = container
 
 # Set all CORS enabled origins
 if settings.allowed_origins:
