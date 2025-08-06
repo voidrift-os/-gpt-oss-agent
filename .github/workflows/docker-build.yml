@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: ./backend
-          file: ./backend/Dockerfile
-          push: true
-    tags: ghcr.io/${{ github.repository_owner }}/gpt-oss-agent-backend:latest
+   
+              push: true
+          tags: ghcr.io/${{ github.repository_owner }}/gpt-oss-agent-backend:latest
