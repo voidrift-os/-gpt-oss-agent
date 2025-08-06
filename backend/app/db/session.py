@@ -8,6 +8,7 @@ from app.core.config import settings
 
 
 # Create the SQLAlchemy async engine using the configured database URL.
+# ``echo`` is controlled by ``settings.debug`` for optional SQL logging.
 engine = create_async_engine(str(settings.database_url), echo=settings.debug)
 
 # Factory for new AsyncSession objects.
