@@ -1,2 +1,15 @@
 # Environment variables
 .env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node modules and build output
+frontend/node_modules/
+frontend/dist/
+frontend/package-lock.json
+
+# Local test databases
+test.db
+tmp_test.db

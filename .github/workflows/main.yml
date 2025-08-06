@@ -23,7 +23,9 @@ jobs:
           python -m pip install -r backend/requirements.txt
 
       - name: Run tests
-          run: export PYTHONPATH=backend && python -m pytest backend/tests
+        run: |
+          export PYTHONPATH=backend
+          python -m pytest backend/tests
 
   build-and-push:
     needs: build-and-test
