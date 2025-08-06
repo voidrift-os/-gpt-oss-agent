@@ -1,4 +1,4 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import AnyUrl, PostgresDsn
 
 class Settings(BaseSettings):
@@ -29,9 +29,7 @@ class Settings(BaseSettings):
     algorithm: str = "HS256"
     debug: bool = False
 
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
+    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 
 # Instantiate settings once on import

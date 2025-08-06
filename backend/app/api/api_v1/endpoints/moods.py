@@ -29,7 +29,7 @@ async def read_moods(
         .order_by(Mood.date.desc())
     )
     moods = result.scalars().all()
-    return [MoodSchema.from_orm(m) for m in moods]
+    return [MoodSchema.model_validate(m) for m in moods]
 
 
 
@@ -42,11 +42,11 @@ async def create_mood(
     _: Any = Depends(rate_limit_general)
 ) -> Any:
     """Create new mood entry"""
-    mood = Mood(**mood_in.dict(), owner_id=current_user.id)
+    mood = Mood(**mood_in.model_dump(), owner_id=current_user.id)
     db.add(mood)
     await db.commit()
     await db.refresh(mood)
-    return MoodSchema.from_orm(mood)
+    return MoodSchema.model_validate(mood)
 
 
 @router.put("/{mood_id}", response_model=MoodSchema)
@@ -70,13 +70,13 @@ async def update_mood(
     if not mood:
         raise HTTPException(status_code=404, detail="Mood entry not found")
     
-    update_data = mood_in.dict(exclude_unset=True)
+    update_data = mood_in.model_dump(exclude_unset=True)
     for field, value in update_data.items():
         setattr(mood, field, value)
     
     await db.commit()
     await db.refresh(mood)
-    return mood
+    return MoodSchema.model_validate(mood)
 
 
 @router.delete("/{mood_id}")
