@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: aiobreaker
+Version: 1.2.0
+Summary: Python implementation of the Circuit Breaker pattern.
+Home-page: https://github.com/arlyon/aiobreaker
+Author: Alexander Lyon
+Author-email: arlyon@me.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Provides-Extra: redis
+Requires-Dist: redis ; extra == 'redis'
+Provides-Extra: test
+Requires-Dist: fakeredis ; extra == 'test'
+Requires-Dist: pytest (>4) ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: safety ; extra == 'test'
+Requires-Dist: bandit ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+aiobreaker
+==========
+
+aiobreaker is a Python implementation of the Circuit Breaker pattern,
+described in Michael T. Nygard's book `Release It!`_.
+
+Circuit breakers exist to allow one subsystem to fail without destroying
+the entire system. This is done by wrapping dangerous operations
+(typically integration points) with a component that can circumvent
+calls when the system is not healthy.
+
+This project is a fork of pybreaker_ by Daniel Fernandes Martins that
+replaces tornado with native asyncio, originally so I could practice
+packaging and learn about that shiny new ``typing`` package.
+
+.. _`Release It!`: https://pragprog.com/titles/mnee2/release-it-second-edition/
+.. _pybreaker: https://github.com/danielfm/pybreaker
+
+Features
+--------
+
+- Configurable list of excluded exceptions (e.g. business exceptions)
+- Configurable failure threshold and reset timeout
+- Support for several event listeners per circuit breaker
+- Can guard generator functions
+- Functions and properties for easy monitoring and management
+- ``asyncio`` support
+- Optional redis backing
+- Synchronous and asynchronous event listeners
+
+Requirements
+------------
+
+All you need is ``python 3.6`` or higher.
+
+Installation
+------------
+
+To install, simply download from pypi:
+
+.. code:: bash
+
+    pip install aiobreaker
+
+Usage
+-----
+
+The first step is to create an instance of ``CircuitBreaker`` for each
+integration point you want to protect against.
+
+.. code:: python
+
+    from aiobreaker import CircuitBreaker
+
+    # Used in database integration points
+    db_breaker = CircuitBreaker(fail_max=5, reset_timeout=timedelta(seconds=60))
+
+    @db_breaker
+    async def outside_integration():
+        """Hits the api"""
+        ...
+
+At that point, go ahead and get familiar with the documentation.
+
+

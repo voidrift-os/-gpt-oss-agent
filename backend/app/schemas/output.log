@@ -1,0 +1,403 @@
+2025-08-03 21:12:04.764 [info] [Main] WindsurfWindowsMainManager: Window will load {"windowId":1,"workspaceUri":{"id":"4080714e6d02801269123d10efde24f5","uri":{"$mid":1,"fsPath":"/","external":"file:///","path":"/","scheme":"file"}}}
+2025-08-03 21:12:04.780 [info] [Main] update#setState idle
+2025-08-03 21:12:06.987 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.vscode-selfhost-test-provider' wants API proposal 'attributableCoverage' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.991 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.992 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.vscode-pull-request-github' wants API proposal 'fileComments' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.993 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatVariableResolver' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.993 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.994 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.debugpy' wants API proposal 'contribIssueReporter' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.995 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-azuretools.vscode-azure-github-copilot' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.996 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'ms-vscode.cpptools' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.997 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'redhat.java' wants API proposal 'documentPaste' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:06.998 [warning] [Window] Via 'product.json#extensionEnabledApiProposals' extension 'vscjava.vscode-java-pack' wants API proposal 'lmTools' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-08-03 21:12:07.610 [warning] [Window] IWorkbenchContributionsRegistry#getContribution('windsurf.cascadePanel'): contribution instantiated before LifecyclePhase.Restored!
+2025-08-03 21:12:07.727 [error] [Window] Window not found: Error: Window not found
+    at Rui.getWindowsInGroup (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:3482:8541)
+    at new H8t (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:1925:176396)
+    at bpi.o (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:2000:1590)
+    at vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:2000:3310
+    at Mvi.d (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:30:78502)
+    at get value (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:30:78644)
+    at Object.get (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:2000:3833)
+    at Poe._runFn (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:3422:17143)
+    at Poe.l (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:31:22641)
+    at new Poe (vscode-file://vscode-app/usr/share/windsurf/resources/app/out/vs/workbench/workbench.desktop.main.js:31:22353)
+2025-08-03 21:12:07.736 [info] [Views] Added views:windsurf.cascadePanel in windsurf.cascadeViewContainerId
+2025-08-03 21:12:07.736 [info] [Views] Added views:outline in workbench.view.explorer
+2025-08-03 21:12:07.736 [info] [Views] Added views:workbench.view.search in workbench.view.search
+2025-08-03 21:12:07.736 [info] [Views] Added views:workbench.scm in workbench.view.scm
+2025-08-03 21:12:07.736 [info] [Views] Added views:workbench.panel.markers.view in workbench.panel.markers
+2025-08-03 21:12:07.736 [info] [Views] Added views:workbench.panel.output in workbench.panel.output
+2025-08-03 21:12:07.736 [info] [Views] Added views:terminal in terminal
+2025-08-03 21:12:07.736 [info] [Views] Added views:timeline in workbench.view.explorer
+2025-08-03 21:12:07.736 [info] [Views] Added views:workbench.explorer.fileView in workbench.view.explorer
+2025-08-03 21:12:08.292 [info] [Views] Added views:workbench.debug.welcome in workbench.view.debug
+2025-08-03 21:12:08.329 [info] [Window] Started local extension host with pid 712.
+2025-08-03 21:12:10.247 [error] [Window] Extension 'ms-python.python' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): contribEditorContentMenu, quickPickSortByLabel, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, codeActionAI, notebookReplDocument, notebookVariableProvider
+product.json (WINS): contribEditorContentMenu, quickPickSortByLabel, portsAttributes, testObserver, quickPickItemTooltip, terminalDataWriteEvent, terminalExecuteCommandEvent, notebookReplDocument
+2025-08-03 21:12:10.505 [warning] [Window] [ms-python.python]: Cannot register 'python.venvPath'. This property is already registered.
+2025-08-03 21:12:10.592 [info] [Views] Added views:windsurfDevContainers in workbench.view.remote
+2025-08-03 21:12:10.593 [info] [Views] Added views:windsurfSSHHosts in workbench.view.remote
+2025-08-03 21:12:10.594 [info] [Views] Added views:gitlens.views.scm.grouped in workbench.view.scm
+2025-08-03 21:12:10.599 [info] [Views] Added views:gitlens.views.commitDetails,gitlens.views.lineHistory,gitlens.views.fileHistory,gitlens.views.timeline,gitlens.views.searchAndCompare in workbench.view.extension.gitlensInspect
+2025-08-03 21:12:10.599 [info] [Views] Added views:gitlens.views.home,gitlens.views.launchpad,gitlens.views.workspaces in workbench.view.extension.gitlens
+2025-08-03 21:12:10.599 [info] [Views] Added views:gitlens.views.graph,gitlens.views.graphDetails in workbench.view.extension.gitlensPanel
+2025-08-03 21:12:12.484 [info] [Extension Host] Extension host with pid 712 started
+2025-08-03 21:12:12.485 [info] [Extension Host] Skipping acquiring lock for /home/pipe1010fh/.config/Windsurf/User/workspaceStorage/4080714e6d02801269123d10efde24f5.
+2025-08-03 21:12:12.665 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-08-03 21:12:12.672 [info] [Views] Added views:workbench.panel.repl.view in workbench.panel.repl
+2025-08-03 21:12:12.709 [info] [Extension Host] ExtensionService#_doActivateExtension Codeium.windsurfPyright, startup: false, activationEvent: 'onLanguage:python'
+2025-08-03 21:12:12.786 [info] [Extension Host] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
+2025-08-03 21:12:12.955 [info] [Views] Added views:~remote.forwardedPorts in ~remote.forwardedPortsContainer
+2025-08-03 21:12:13.041 [error] [Remote Tunnel Service] Missing 'tunnelApplicationConfig' or 'tunnelApplicationName' in product.json. Remote tunneling is not available.
+2025-08-03 21:12:13.184 [error] [Window] App icon customization is not supported on this OS: Error: App icon customization is not supported on this OS
+    at d9.setIcon (file:///usr/share/windsurf/resources/app/out/main.js:87:3627)
+    at Object.call (file:///usr/share/windsurf/resources/app/out/main.js:33:4556)
+    at M1.s (file:///usr/share/windsurf/resources/app/out/main.js:31:20444)
+    at M1.q (file:///usr/share/windsurf/resources/app/out/main.js:31:19967)
+    at Ia.value (file:///usr/share/windsurf/resources/app/out/main.js:31:19369)
+    at A.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at A.C (file:///usr/share/windsurf/resources/app/out/main.js:30:2443)
+    at A.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2660)
+    at Ia.value (file:///usr/share/windsurf/resources/app/out/main.js:28:4898)
+    at A.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at A.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at Ia.value (file:///usr/share/windsurf/resources/app/out/main.js:28:5086)
+    at A.B (file:///usr/share/windsurf/resources/app/out/main.js:30:2373)
+    at A.fire (file:///usr/share/windsurf/resources/app/out/main.js:30:2591)
+    at U (file:///usr/share/windsurf/resources/app/out/main.js:28:7373)
+    at IpcMainImpl.i (file:///usr/share/windsurf/resources/app/out/main.js:33:21016)
+    at IpcMainImpl.emit (node:events:518:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:87043)
+    at WebContents.emit (node:events:518:28)
+2025-08-03 21:12:13.253 [info] [Extension Host] ExtensionService#_doActivateExtension njpwerner.autodocstring, startup: false, activationEvent: 'onLanguage:python'
+2025-08-03 21:12:13.297 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-08-03 21:12:13.521 [warning] [Python] Dir "/.pixi/envs" is not watchable (directory does not exist)
+2025-08-03 21:12:13.761 [info] [Python] Python interpreter path: ./bin/python3
+2025-08-03 21:12:13.767 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-08-03 21:12:14.047 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-08-03 21:12:14.055 [info] [Views] Added views:workbench.view.testing in workbench.view.extension.test
+2025-08-03 21:12:14.161 [info] [Extension Host] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-08-03 21:12:14.555 [info] [Window] [perf] Render performance baseline is 46ms
+2025-08-03 21:12:15.032 [info] [Extension Host] ExtensionService#_doActivateExtension codeium.windsurf, startup: false, activationEvent: '*'
+2025-08-03 21:12:16.037 [info] [Python] > pyenv which python
+2025-08-03 21:12:16.037 [info] [Python] cwd: .
+2025-08-03 21:12:16.148 [info] [Extension Host] ExtensionService#_doActivateExtension ToughType.pydance, startup: true, activationEvent: 'workspaceContains:**/*.py'
+2025-08-03 21:12:16.373 [info] [Python] Editor support is inactive since language server is set to None.
+2025-08-03 21:12:16.410 [error] [Window] [Extension Host] Sending request failed.
+2025-08-03 21:12:16.423 [info] [Git] [main] Log level: Info
+2025-08-03 21:12:16.423 [info] [Git] [main] Validating found git in: "git"
+2025-08-03 21:12:16.423 [info] [Git] [main] Using git "2.39.5" from "git"
+2025-08-03 21:12:16.423 [info] [Git] [Model][doInitialScan] Initial repository scan started
+2025-08-03 21:12:16.423 [info] [Git] > git rev-parse --show-toplevel [1170ms]
+2025-08-03 21:12:16.423 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.423 [info] [Git] > git rev-parse --show-toplevel [285ms]
+2025-08-03 21:12:16.423 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.441 [info] [GitHub] Log level: Info
+2025-08-03 21:12:16.484 [warning] [Git] [Model][traverseWorkspaceFolder] Unable to read workspace folder '/root': Error: EACCES: permission denied, scandir '/root'
+2025-08-03 21:12:16.501 [info] [Git] > git rev-parse --show-toplevel [4ms]
+2025-08-03 21:12:16.501 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.510 [info] [Git] > git rev-parse --show-toplevel [1ms]
+2025-08-03 21:12:16.510 [info] [Git] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-03 21:12:16.526 [info] [Git] > git rev-parse --show-toplevel [5ms]
+2025-08-03 21:12:16.526 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.555 [info] [Git] > git rev-parse --show-toplevel [11ms]
+2025-08-03 21:12:16.555 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.577 [info] [Git] > git rev-parse --show-toplevel [3ms]
+2025-08-03 21:12:16.577 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.595 [info] [Git] > git rev-parse --show-toplevel [1ms]
+2025-08-03 21:12:16.595 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.604 [error] [Window] [Extension Host] Sending request failed.
+2025-08-03 21:12:16.608 [info] [Git] > git rev-parse --show-toplevel [2ms]
+2025-08-03 21:12:16.608 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.621 [info] [Git] > git rev-parse --show-toplevel [2ms]
+2025-08-03 21:12:16.621 [info] [Git] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-03 21:12:16.632 [info] [Git] > git rev-parse --show-toplevel [3ms]
+2025-08-03 21:12:16.632 [info] [Git] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-03 21:12:16.635 [error] [Window] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (file:///usr/share/windsurf/resources/app/out/bootstrap-fork.js:3:1482)
+	at process.emit (node:events:518:28)
+2025-08-03 21:12:16.645 [info] [Git] > git rev-parse --show-toplevel [3ms]
+2025-08-03 21:12:16.645 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.661 [info] [Git] > git rev-parse --show-toplevel [4ms]
+2025-08-03 21:12:16.661 [info] [Git] fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2025-08-03 21:12:16.671 [error] [Window] [Extension Host] Sending request failed.
+2025-08-03 21:12:16.684 [info] [Git] > git rev-parse --show-toplevel [3ms]
+2025-08-03 21:12:16.684 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.718 [error] [Window] [Extension Host] Sending request failed.
+2025-08-03 21:12:16.719 [error] [Window] [Extension Host] Sending request failed.
+2025-08-03 21:12:16.750 [info] [Git] > git rev-parse --show-toplevel [44ms]
+2025-08-03 21:12:16.750 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.830 [info] [Git] > git rev-parse --show-toplevel [62ms]
+2025-08-03 21:12:16.830 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:16.837 [info] [Git] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-08-03 21:12:17.412 [error] [Extension Host] Error: Cannot call write after a stream was destroyed
+	at _write (node:internal/streams/writable:491:11)
+	at Writable.write (node:internal/streams/writable:510:10)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:14053
+	at new Promise (<anonymous>)
+	at Fa.write (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:13974)
+	at is.doWrite (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1625)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1524
+	at runNextTicks (node:internal/process/task_queues:60:5)
+	at process.processImmediate (node:internal/timers:454:9)
+2025-08-03 21:12:17.413 [error] [Extension Host] Error: Client is not running and can't be stopped. It's current state is: starting
+	at nd.shutdown (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8468)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8047)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:44:30845)
+	at nd.doInitialize (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:7872)
+	at processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at runNextTicks (node:internal/process/task_queues:64:3)
+	at process.processImmediate (node:internal/timers:454:9)
+	at async nd.start (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:4452)
+2025-08-03 21:12:17.416 [error] [Window] An unknown error occurred. Please consult the log for more details.
+2025-08-03 21:12:17.416 [error] [Extension Host] Error: Cannot call write after a stream was destroyed
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:3782
+	at processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at runNextTicks (node:internal/process/task_queues:64:3)
+	at process.processImmediate (node:internal/timers:454:9)
+2025-08-03 21:12:17.439 [error] [Extension Host] Error: write EPIPE
+	at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+	at writeGeneric (node:internal/stream_base_commons:152:3)
+	at Socket._writeGeneric (node:net:958:11)
+	at Socket._write (node:net:970:8)
+	at writeOrBuffer (node:internal/streams/writable:572:12)
+	at _write (node:internal/streams/writable:501:10)
+	at Writable.write (node:internal/streams/writable:510:10)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:14053
+	at new Promise (<anonymous>)
+	at Fa.write (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:13974)
+	at is.doWrite (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1625)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1524
+2025-08-03 21:12:17.441 [error] [Extension Host] Error: Client is not running and can't be stopped. It's current state is: starting
+	at nd.shutdown (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8468)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8047)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:44:30845)
+	at nd.doInitialize (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:7872)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at async nd.start (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:4452)
+2025-08-03 21:12:17.457 [error] [Extension Host] Error: Cannot call write after a stream was destroyed
+	at _write (node:internal/streams/writable:491:11)
+	at Writable.write (node:internal/streams/writable:510:10)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:14053
+	at new Promise (<anonymous>)
+	at Fa.write (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:13974)
+	at is.doWrite (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1625)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1524
+2025-08-03 21:12:17.457 [error] [Extension Host] Error: Client is not running and can't be stopped. It's current state is: starting
+	at nd.shutdown (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8468)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8047)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:44:30845)
+	at nd.doInitialize (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:7872)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at async nd.start (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:4452)
+2025-08-03 21:12:17.466 [error] [Extension Host] Error: write EPIPE
+	at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+	at writeGeneric (node:internal/stream_base_commons:152:3)
+	at Socket._writeGeneric (node:net:958:11)
+	at Socket._write (node:net:970:8)
+	at writeOrBuffer (node:internal/streams/writable:572:12)
+	at _write (node:internal/streams/writable:501:10)
+	at Writable.write (node:internal/streams/writable:510:10)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:14053
+	at new Promise (<anonymous>)
+	at Fa.write (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:13974)
+	at is.doWrite (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1625)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1524
+	at runNextTicks (node:internal/process/task_queues:60:5)
+	at process.processImmediate (node:internal/timers:454:9)
+2025-08-03 21:12:17.467 [error] [Extension Host] Error: Client is not running and can't be stopped. It's current state is: starting
+	at nd.shutdown (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8468)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8047)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:44:30845)
+	at nd.doInitialize (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:7872)
+	at processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at runNextTicks (node:internal/process/task_queues:64:3)
+	at process.processImmediate (node:internal/timers:454:9)
+	at async nd.start (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:4452)
+2025-08-03 21:12:17.481 [error] [Extension Host] Error: Cannot call write after a stream was destroyed
+	at _write (node:internal/streams/writable:491:11)
+	at Writable.write (node:internal/streams/writable:510:10)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:14053
+	at new Promise (<anonymous>)
+	at Fa.write (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:31:13974)
+	at is.doWrite (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1625)
+	at /home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:3:1524
+2025-08-03 21:12:17.484 [error] [Extension Host] Error: Client is not running and can't be stopped. It's current state is: starting
+	at nd.shutdown (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8468)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:8047)
+	at nd.stop (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:44:30845)
+	at nd.doInitialize (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:7872)
+	at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+	at async nd.start (/home/pipe1010fh/.windsurf/extensions/toughtype.pydance-0.2.2-universal/out/extension.js:41:4452)
+2025-08-03 21:12:19.221 [error] [Window] [File Watcher] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2025-08-03 21:12:19.222 [error] [Window] [File Watcher (universal)] No such file or directory
+2025-08-03 21:12:19.225 [error] [File Watcher] [File Watcher] Unexpected error: No such file or directory (EUNKNOWN) (path: /)
+2025-08-03 21:12:19.225 [error] [File Watcher] [File Watcher (universal)] No such file or directory
+2025-08-03 21:12:19.528 [info] [Windsurf] 2025/08/03 21:12:19 maxprocs: Leaving GOMAXPROCS=4: CPU quota undefined
+2025-08-03 21:12:20.088 [info] [Windsurf] I0803 21:12:20.083919   916 main.go:605] Setting GOMAXPROCS to 4
+2025-08-03 21:12:20.088 [info] [Windsurf] I0803 21:12:20.084296   916 main.go:824] Starting language server process with pid 916
+2025-08-03 21:12:20.088 [info] [Windsurf] I0803 21:12:20.084850   916 server.go:301] Language server will attempt to listen on host 127.0.0.1
+2025-08-03 21:12:20.088 [info] [Windsurf] I0803 21:12:20.085664   916 server.go:308] Language server listening on random port at 34869
+2025-08-03 21:12:20.426 [info] [Windsurf] I0803 21:12:20.425582   916 server.go:441] Created extension server client at port 46471
+2025-08-03 21:12:20.637 [info] [Windsurf] I0803 21:12:20.631865   916 server.go:1010] Local search is enabled, will index local files.
+2025-08-03 21:12:20.637 [info] [Windsurf] I0803 21:12:20.631928   916 server.go:1014] Using 1 indexer workers
+2025-08-03 21:12:20.947 [info] [Windsurf] (Windsurf) 2025-08-03 21:12:20.925 [INFO]: Language server started
+2025-08-03 21:12:21.040 [info] [Extension Host] Eager extensions activated
+2025-08-03 21:12:21.120 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:21.252 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:21.456 [info] [Extension Host] ExtensionService#_doActivateExtension Codeium.windsurf-dev-containers, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:21.581 [info] [Extension Host] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:21.794 [info] [Extension Host] ExtensionService#_doActivateExtension eamodio.gitlens, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:22.683 [info] [Extension Host] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-08-03 21:12:23.082 [info] [Python] Running installed packages checker:  {
+  id: '/bin/python3',
+  sysPrefix: '/usr',
+  envType: 'Global',
+  envName: '',
+  envPath: '',
+  path: '/bin/python3',
+  architecture: 3,
+  sysVersion: '3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]',
+  version: {
+    raw: '3.11.2',
+    major: 3,
+    minor: 11,
+    patch: 2,
+    build: [],
+    prerelease: [ 'final', '0' ]
+  },
+  displayName: 'Python 3.11.2 64-bit',
+  detailedDisplayName: 'Python 3.11.2 64-bit',
+  type: undefined
+} /home/pipe1010fh/.windsurf/extensions/ms-python.python-2025.4.0-universal/python_files/installed_check.py /home/pipe1010fh/CascadeProjects/wealth-app/backend/requirements.txt
+2025-08-03 21:12:23.082 [info] [Python] > .bin.python3 .home.pipe1010fh..windsurf.extensions.ms-python.python-2025.4.0-universal.python_files.installed_check.py .home.pipe1010fh.CascadeProjects.wealth-app.backend.requirements.txt
+2025-08-03 21:12:23.690 [info] [Views] Removed views:gitlens.views.graphDetails,gitlens.views.graph from workbench.view.extension.gitlensPanel
+2025-08-03 21:12:23.693 [info] [Views] Removed views:gitlens.views.searchAndCompare,gitlens.views.timeline,gitlens.views.fileHistory,gitlens.views.lineHistory,gitlens.views.commitDetails from workbench.view.extension.gitlensInspect
+2025-08-03 21:12:23.711 [info] [Views] Removed views:gitlens.views.scm.grouped from workbench.view.scm
+2025-08-03 21:12:24.305 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2025-08-03 21:12:24.389 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2025-08-03 21:12:24.492 [info] [Views] Added views:gitlens.views.drafts in workbench.view.extension.gitlens
+2025-08-03 21:12:24.609 [info] [Extension Host] ExtensionService#_doActivateExtension rvest.vs-code-prettier-eslint, startup: false, activationEvent: 'onLanguage:markdown'
+2025-08-03 21:12:25.731 [info] [Windsurf] (Windsurf) 2025-08-03 21:12:25.731 [INFO]: LS lspClient started successfully
+2025-08-03 21:12:26.674 [info] [Extension Host] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-08-03 21:12:27.363 [info] [GitLens (Git)] [2025-08-04 01:12:26.630] [*       856ms] [/] git rev-parse --show-toplevel (slow) • FAILED
+2025-08-03 21:12:27.363 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:27.363 [info] [GitLens] GitLens v17.3.3 activating in Windsurf (1.99.3) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (8d1ff02fd4f60e5a1a0fd5e38f274210115aab4c200e33afd20ecf094452faa5|6d3788a7-b764-4827-84b4-90883ea80f591754269927031)
+To enable debug logging, set `"gitlens.outputLevel": "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+
+2025-08-03 21:12:27.363 [info] [GitLens] [2025-08-04 01:12:26.624] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:26.625] [GIT          ] [/] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [856ms] (slow)
+
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Reading sessions from keychain...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Getting sessions for all scopes...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Got 0 sessions for ...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Getting sessions for all scopes...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Got 0 sessions for ...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Getting sessions for read:user,repo,user:email...
+2025-08-03 21:12:27.391 [info] [GitHub Authentication] Got 0 sessions for read:user,repo,user:email...
+2025-08-03 21:12:28.321 [info] [GitLens (Git)] [2025-08-04 01:12:28.320] [        220ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.326 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.354 [info] [GitLens (Git)] [2025-08-04 01:12:28.354] [        298ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.354 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.354 [info] [GitLens (Git)] [2025-08-04 01:12:28.354] [        255ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db] git rev-parse --show-toplevel (waiting) • FAILED
+2025-08-03 21:12:28.354 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.355 [info] [GitLens (Git)] [2025-08-04 01:12:28.355] [        419ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.355 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.355 [info] [GitLens (Git)] [2025-08-04 01:12:28.355] [        261ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend] git rev-parse --show-toplevel (waiting) • FAILED
+2025-08-03 21:12:28.355 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.368 [info] [GitLens (Git)] [2025-08-04 01:12:28.368] [        470ms] [/home/pipe1010fh/.codeium/windsurf/brain/5b7b8f26-ab8c-403d-97ad-67f8ee9924ee] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.368 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.371 [info] [GitLens (Git)] [2025-08-04 01:12:28.371] [        491ms] [/dev] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.372 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+2025-08-03 21:12:28.374 [info] [GitLens (Git)] [2025-08-04 01:12:28.373] [*       506ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas] git rev-parse --show-toplevel (slow) • FAILED
+2025-08-03 21:12:28.374 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.419 [info] [GitLens] [2025-08-04 01:12:27.789] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) FAILED
+Error: EACCES: permission denied, scandir '/root'
+[2025-08-04 01:12:28.320] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.320] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [220ms]
+[2025-08-04 01:12:28.340] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.353] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [298ms]
+[2025-08-04 01:12:28.354] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [255ms] (waiting)
+[2025-08-04 01:12:28.354] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.355] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [419ms]
+[2025-08-04 01:12:28.355] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [261ms] (waiting)
+[2025-08-04 01:12:28.355] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.368] [GIT          ] [/home/pipe1010fh/.codeium/windsurf/brain/5b7b8f26-ab8c-403d-97ad-67f8ee9924ee] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [470ms]
+[2025-08-04 01:12:28.370] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+[2025-08-04 01:12:28.371] [GIT          ] [/dev] git rev-parse --show-toplevel • not a git repository (or any parent up to mount point /) • Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set). [491ms]
+[2025-08-04 01:12:28.372] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.373] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [506ms] (slow)
+
+2025-08-03 21:12:28.573 [info] [GitLens (Git)] [2025-08-04 01:12:28.573] [        317ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/core] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.573 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.573 [info] [GitLens (Git)] [2025-08-04 01:12:28.573] [         37ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/core] git rev-parse --show-toplevel (waiting) • FAILED
+2025-08-03 21:12:28.573 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.594 [info] [GitLens (Git)] [2025-08-04 01:12:28.594] [         37ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.594 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.601 [info] [GitLens (Git)] [2025-08-04 01:12:28.601] [         62ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel • FAILED
+2025-08-03 21:12:28.601 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:28.601 [info] [GitLens (Git)] [2025-08-04 01:12:28.601] [         45ms] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel (waiting) • FAILED
+2025-08-03 21:12:28.601 [info] [GitLens (Git)] 
+Error: fatal: not a git repository (or any of the parent directories): .git
+
+2025-08-03 21:12:29.088 [info] [GitLens] [2025-08-04 01:12:28.573] [            f] GitCodeLensProvider.provideCodeLenses(TextDocument(python, dirty=false, file:///home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas/user.py)) Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.573] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/core] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [317ms]
+[2025-08-04 01:12:28.573] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/core] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [37ms] (waiting)
+[2025-08-04 01:12:28.593] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.594] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/schemas] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [37ms]
+[2025-08-04 01:12:28.594] Warning(/usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel): fatal: not a git repository (or any of the parent directories): .git
+
+[2025-08-04 01:12:28.599] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [62ms]
+[2025-08-04 01:12:28.601] [GIT          ] [/home/pipe1010fh/CascadeProjects/wealth-app/backend/app/db/models] git rev-parse --show-toplevel • not a git repository (or any of the parent directories): .git [45ms] (waiting)
+
+2025-08-03 21:12:33.576 [info] [Git] > git rev-parse --show-toplevel [620ms]
+2025-08-03 21:12:33.576 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:34.836 [info] [Main] update#setState checking for updates
+2025-08-03 21:12:35.118 [info] [Main] update#setState idle
+2025-08-03 21:12:42.160 [info] [Git] > git rev-parse --show-toplevel [271ms]
+2025-08-03 21:12:42.160 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
+2025-08-03 21:12:42.421 [info] [Git] > git rev-parse --show-toplevel [208ms]
+2025-08-03 21:12:42.421 [info] [Git] fatal: not a git repository (or any of the parent directories): .git
