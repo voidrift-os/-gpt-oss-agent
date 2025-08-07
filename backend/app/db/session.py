@@ -8,8 +8,10 @@ from app.core.config import settings
 
 
 # Create the SQLAlchemy async engine using the configured database URL.
-# Some older images may not define a ``debug`` attribute on ``settings``;
-# ``getattr`` provides a safe default in those cases.
+# `echo` is controlled by `settings.debug` for optional SQL logging but
+# safely falls back to `False` when the attribute is missing.
+# Some older images may not define a `debug` attribute on `settings`;
+# `getattr` provides a safe default in those cases.
 engine = create_async_engine(
     str(settings.database_url), echo=getattr(settings, "debug", False)
 )
@@ -23,7 +25,6 @@ SessionLocal = AsyncSessionLocal
 
 
 async def async_session() -> AsyncGenerator[AsyncSession, None]:
-    """Yield a new ``AsyncSession`` instance."""
+    """Yield a new `AsyncSession` instance."""
     async with AsyncSessionLocal() as session:
         yield session
-
