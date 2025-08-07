@@ -1,13 +1,20 @@
+"""Application settings loaded from environment variables.
+
+This module defines a small ``Settings`` class that centralises all runtime
+configuration.  It uses Pydantic's ``BaseSettings`` so values can be overridden
+via environment variables or an ``.env`` file during development.
+"""
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from pydantic import AnyUrl, PostgresDsn
 
 class Settings(BaseSettings):
-    """Application configuration loaded from environment variables.
+    """Central application configuration.
 
-    Defaults are provided so that the application and test suite can run
-    even when the expected environment variables are not defined. These
-    values can be overridden by setting the corresponding variables or by
-    providing a `.env` file.
+    Defaults are provided so that the application and test suite can run even
+    when the expected environment variables are not defined.  These values can
+    be overridden by setting the corresponding variables or by providing an
+    ``.env`` file.
     """
 
     # Security
@@ -27,6 +34,7 @@ class Settings(BaseSettings):
     allowed_origins: list[str] = []
     access_token_expire_minutes: int = 30
     algorithm: str = "HS256"
+    # Toggle verbose SQLAlchemy logging; overridable via ``DEBUG`` env var.
     debug: bool = False
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
