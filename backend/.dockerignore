@@ -1,32 +1,20 @@
-# Python cache/virtualenv
-
+#Python cache/virtualenv
 __pycache__/
 *.py[cod]
 .venv/
 venv/
 
-# Tests and tooling
-
-/tests/
-.pytest_cache/
-.coverage
-# Python cache/virtualenv
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-
-# Tests and tooling
+#Tests and tooling
 /tests/
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Env and secrets
+#Env and secrets
 .env
 .env.*
 *.pem
 *.key
 
-# VCS
+#VCS
 .git
