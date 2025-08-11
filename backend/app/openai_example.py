@@ -13,7 +13,10 @@ def ask_openai(prompt: str) -> str:
     reply text.
     """
 
-    client = OpenAI()
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise RuntimeError("Missing OpenAI API key. Please set the OPENAI_API_KEY environment variable.")
+    client = OpenAI(api_key=api_key)
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
