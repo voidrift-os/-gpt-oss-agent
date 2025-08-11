@@ -1,5 +1,7 @@
 import logging
 import sys
+import logging
+import sys
 import structlog
 
 from fastapi import FastAPI
