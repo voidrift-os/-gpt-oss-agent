@@ -1,0 +1,8 @@
+# Require review from the core maintainers by default
+*       @voidrift-os
+
+# Backend
+/backend/    @voidrift-os
+
+# Frontend
+/frontend/   @voidrift-os

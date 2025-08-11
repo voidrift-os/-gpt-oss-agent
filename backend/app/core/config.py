@@ -1,5 +1,5 @@
 from pydantic_settings import BaseSettings
-from pydantic import AnyUrl, PostgresDsn
+from pydantic import AnyUrl
 
 class Settings(BaseSettings):
     """Application configuration loaded from environment variables.
@@ -13,10 +13,8 @@ class Settings(BaseSettings):
     # Security
     secret_key: str = "change-me"
 
-    # Database
-    database_url: PostgresDsn = (
-        "postgresql+asyncpg://user:password@localhost:5432/test_db"
-    )
+    # Database (default to SQLite for local dev/tests; override in prod via env)
+    database_url: str = "sqlite+aiosqlite:///./app.db"
 
     # Redis
     redis_url: AnyUrl = "redis://localhost:6379/0"

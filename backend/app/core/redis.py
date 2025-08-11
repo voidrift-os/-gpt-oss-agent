@@ -9,11 +9,18 @@ class RedisManager:
     
     async def connect(self):
         """Connect to Redis"""
-        self.redis = redis.from_url(
+        # Create client and verify connectivity; if unreachable, leave unconnected
+        client = redis.from_url(
             settings.redis_url,
             encoding="utf-8",
             decode_responses=True
         )
+        try:
+            await client.ping()
+            self.redis = client
+        except Exception:
+            # Keep redis as None to signal unavailable; app will gracefully degrade
+            self.redis = None
     
     async def disconnect(self):
         """Disconnect from Redis"""
