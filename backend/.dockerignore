@@ -1,4 +1,16 @@
 # Python cache/virtualenv
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Tests and tooling
+
+/tests/
+.pytest_cache/
+.coverage
+# Python cache/virtualenv
 __pycache__/
 *.py[cod]
 .venv/

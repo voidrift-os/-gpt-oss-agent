@@ -1,0 +1,20 @@
+pair: "BTC/USDT"
+timeframe: "5m"
+poll_seconds: 60
+
+paper_trading: true         # set to false to send real orders
+base_currency: "USDT"
+starting_balance: 1000.0
+
+fee_rate: 0.0004            # 0.04% per trade (paper mode)
+max_position_pct: 0.25      # cap position at 25% of balance
+risk_pct: 0.01              # risk 1% per trade (if stop used)
+
+strategy:
+  name: "sma_cross"         # "sma_cross" or "rsi_reversion"
+  params:
+    fast: 20
+    slow: 50
+    rsi_period: 14
+    rsi_buy: 30
+    rsi_sell: 70

@@ -9,6 +9,17 @@
 # Python
 __pycache__/
 *.py[cod]
+#General
+.git
+.github
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+#Python
+__pycache__/
+*.py[cod]
 .pytest_cache/
 .coverage
 htmlcov/
@@ -17,18 +28,18 @@ htmlcov/
 .venv/
 venv/
 
-# Node/Frontend
+#Node/Frontend
 node_modules/
 dist/
 build/
 .cache/
 
-# Env / secrets
+#Env / secrets
 .env
 .env.*
 *.pem
 *.key
 
-# Docker
+#Docker
 docker-compose*.yml
 Dockerfile*
