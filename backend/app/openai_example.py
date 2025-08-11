@@ -18,7 +18,12 @@ def ask_openai(prompt: str) -> str:
         model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
     )
-    return response.choices[0].message.content
+    if not response.choices or len(response.choices) == 0:
+        raise ValueError("No choices returned from OpenAI API.")
+    content = response.choices[0].message.content
+    if content is None:
+        raise ValueError("No content in OpenAI API response.")
+    return content
 
 
 __all__ = ["ask_openai"]
