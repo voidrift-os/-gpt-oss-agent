@@ -28,6 +28,14 @@ def ask_openai(prompt: str) -> str | None:
         raise ValueError("No content in OpenAI API response.")
     return content
 
-
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        # Optionally log the error here
+        return f"Sorry, there was a problem communicating with OpenAI: {str(e)}"
 __all__ = ["ask_openai"]
 
