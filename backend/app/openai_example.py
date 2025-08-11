@@ -5,7 +5,7 @@ from __future__ import annotations
 from openai import OpenAI
 
 
-def ask_openai(prompt: str) -> str:
+def ask_openai(prompt: str) -> str | None:
     """Send ``prompt`` to the OpenAI Chat Completions API and return the text.
 
     The OpenAI SDK from version ``1.x`` uses a client object.  This function
