@@ -1,24 +1,18 @@
-# Python cache and virtualenv
+# .dockerignore - files to exclude from Docker build context
 
 __pycache__/
 *.py[cod]
 .venv/
 venv/
 
-# Tests and tooling
-
 /tests/
 .pytest_cache/
 .coverage
 htmlcov/
 
-# Environment and secrets  
-
 .env
 .env.*
 *.pem
 *.key
-
-# Version control
 
 .git
