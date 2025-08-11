@@ -8,7 +8,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
-from app.api.api_v1 import api
 from app.api.api_v1.api import api_router
 from app.core.config import settings
 from app.core.redis import redis_manager
@@ -60,9 +59,6 @@ if settings.allowed_origins:
 
 app.include_router(api_router, prefix=settings.api_v1_str)
 
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
 
 instrumentator = Instrumentator()
 instrumentator.instrument(app).expose(app, include_in_schema=False, should_gzip=True)
@@ -75,4 +71,4 @@ async def root():
 
 @app.get("/health")
 async def health_check():
-    return {"status": "healthy"}
+    return {"status": "ok"}

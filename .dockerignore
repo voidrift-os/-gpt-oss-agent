@@ -1,0 +1,34 @@
+# General
+.git
+.github
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node/Frontend
+node_modules/
+dist/
+build/
+.cache/
+
+# Env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Docker
+docker-compose*.yml
+Dockerfile*
