@@ -35,7 +35,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Trivy scan (fs + image)
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@0.32.0
         with:
           image-ref: local/gpt-oss-agent-backend:pr-${{ github.run_id }}
           format: sarif
